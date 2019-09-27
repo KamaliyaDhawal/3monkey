@@ -26,3 +26,6 @@
 .fullscreenmode>iframe{
     height: 480px !important;
 }
+.detail-header .heading .col-2 img{
+    cursor: pointer !important;
+}

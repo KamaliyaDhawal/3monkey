@@ -23,7 +23,7 @@
   	position: absolute !important;
     left: 0 !important;
     text-align: left !important;
-    top: -660px !important;
+    top: -795px !important;
   }
 
   .showreeldiv .img-fluid {
@@ -36,19 +36,43 @@
   }
 
   .projects-list {
-  	margin-top: 250px;
+  	margin-top: 280px;
+    min-width: 100% !important;
+    max-width: 100% !important;
   }
 
-  .projects-list  .projects {
-  	/*max-width: 40% !important;*/
-  	/*padding: 15% 15% 0% 15% !important;*/
-  	/*margin-left: 50px;
-    margin-right: 50px*/;
-    /*padding-right: 10% !important;*/
+  .projects-list  .projects, .detail-section .projects {
+  	width: 50% !important;
+    margin-top: 15px !important;
   }
 
   .projects-list  .projects  .img-fluid {
   	max-width: 160px !important;
 
+  }
+
+  .footer-right {
+    margin: -27px 20px 20px 40px !important;
+  }
+
+  .detail-header .col-2 {
+    flex: auto !important;
+    max-width: unset !important;
+  }
+
+  .archive-list .detail-section {
+    background: #dbdbda !important;
+  }
+
+  .archive-list .detail-header .col-2, .project-details .detail-header .col-2 {
+    margin-top: -22px !important;
+  }
+
+  .arabic-lang .sidehash {
+    width: 253px !important;
+  }
+
+  .arabic-lang .showreeldiv {
+    top: -240px !important;
   }
 }

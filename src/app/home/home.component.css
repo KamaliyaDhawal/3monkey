@@ -7,12 +7,13 @@
     background: #dbdbda;
 }
 .projects{
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
     max-height:110px;
     text-align: center;
     text-decoration: none;
     padding-right: 0px;
     padding-left: 0px;  
+    margin-top: 10px !important;
 }
 .projects h3, .projects a {
     font-size: 11pt;
@@ -63,8 +64,11 @@
     text-align: right !important;
 }
 .img-fluid {
-    max-width: 50% !important;
-    max-height: calc(100% - 25px) !important;
+    /*max-width: 50% !important;
+    max-height: calc(100% - 25px) !important;*/
+    max-height: 90px !important;
+    max-width: auto !important;
+    margin-top: 10px !important;
 }
 .projectrow{
     flex: 0 0 34.6666% !important; 
@@ -90,6 +94,28 @@
     margin-top:2px !important;
 }
 
+.ifream-perent {
+    right: 70px !important;
+    top: 160px !important;
+    width: 750px !important;
+    height: 360px !important;
+}
+
+.details-ifream-perent {
+    left: 309px !important;
+    top: 117px !important;
+    min-width: 970px !important;
+    height: 410px !important;
+}
+
+.showreel-container {
+    overflow: hidden !important;
+}
+
+.detail-header .heading .col-2 img{
+    cursor: pointer !important;
+}
+
 @media only screen and (max-width: 425px) {
     .sidehash{
         font-size: 16pt !important;
@@ -104,4 +130,20 @@
         padding-right: 5% !important;
         padding-left: 5% !important;
     }
+
+    .projectrow{
+        flex: auto !important;
+    }
+
+    .ifream-perent, .details-ifream-perent {
+        left: 0px !important;
+        top: 0px !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .details-ifream-perent {
+        min-width: unset !important;
+    }
+
 }

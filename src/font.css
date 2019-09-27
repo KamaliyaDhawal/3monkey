@@ -57,7 +57,8 @@
 }
 
 @font-face {
-    font-family: 'HelveticaNeueLT Arabic 55 Roman';
+    /*font-family: 'HelveticaNeueLT Arabic 55 Roman';*/
+    font-family: 'HelveticaNeueLT Arabic';
     src: url('assets/fonts/font/HelveticaNeueLTArabic-Roman.eot');
     src: url('assets/fonts/font/HelveticaNeueLTArabic-Roman.eot?#iefix') format('embedded-opentype'),
         url('assets/fonts/font/HelveticaNeueLTArabic-Roman.woff2') format('woff2'),

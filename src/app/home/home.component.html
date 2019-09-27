@@ -1,6 +1,15 @@
 
 <div [ngClass]="(lang==2)?'main-container arabic-lang':'main-container'" [ngClass]="{'absolute' : fullScreen || showReelFullScreen || archiveFullScreen }" (click)="closeAll()">
 <div class="container-fluid mtop-50">
+  <div (started)="projectDrag($event)" (click)="projectDrag($event);$event.stopPropagation()" [zIndex]="projectZIndex" [ngDraggable]="!fullScreen" #projectModel="ngDraggable" *ngIf="showModel"  [ngClass]="{'details-ifream-perent fullscreen' : fullScreen, 'details-ifream-perent normal' : !fullScreen}">
+    <app-project-detail [project]="selectedProject" (pageEvent)="projectDetailEvent($event)" ></app-project-detail>
+  </div>
+  <div (started)="showReelDrag($event)" (click)="showReelDrag($event);$event.stopPropagation()" [zIndex]="showRealZIndex" [ngDraggable]="!showReelFullScreen" #showreelModel="ngDraggable" *ngIf="showShowReelModel" [ngClass]="{'ifream-perent fullscreen' : showReelFullScreen, 'ifream-perent normal' : !showReelFullScreen}">
+          <app-showreel (pageEvent)="ShowReelEvent($event)" ></app-showreel>
+  </div>
+  <div (started)="archiveDrag($event)"  (click)="archiveDrag($event);$event.stopPropagation()" [zIndex]="archiveZIndex" [ngDraggable]="!archiveFullScreen" #archiveModel="ngDraggable" *ngIf="showArciveModel" [ngClass]="{'ifream-perent fullscreen' : archiveFullScreen, 'ifream-perent normal' : !archiveFullScreen}">
+          <app-archive (pageEvent)="showArchiveEvent($event, project)" ></app-archive>
+        </div>
     <div class="row">
       <div class="col-md-5 col-sm-12 projectrow">
           <div class="row projects-list">
@@ -28,15 +37,15 @@
               </a>
           </div>
         </div>
-        <div style="left: -120px;top: 117px;min-width: 970px;height: 410px;" (started)="projectDrag($event)" (click)="projectDrag($event);$event.stopPropagation()" [zIndex]="projectZIndex" [ngDraggable]="!fullScreen" #projectModel="ngDraggable" *ngIf="showModel"  [ngClass]="{'fullscreen' : fullScreen, 'normal' : !fullScreen}">
+        <!-- <div class="details-ifream-perent" (started)="projectDrag($event)" (click)="projectDrag($event);$event.stopPropagation()" [zIndex]="projectZIndex" [ngDraggable]="!fullScreen" #projectModel="ngDraggable" *ngIf="showModel"  [ngClass]="{'fullscreen' : fullScreen, 'normal' : !fullScreen}">
           <app-project-detail [project]="selectedProject" (pageEvent)="projectDetailEvent($event)" ></app-project-detail>
-        </div>
-        <div  style="left: 70px;top: 160px;width: 750px;height: 360px;" (started)="showReelDrag($event)" (click)="showReelDrag($event);$event.stopPropagation()" [zIndex]="showRealZIndex" [ngDraggable]="!showReelFullScreen" #showreelModel="ngDraggable" *ngIf="showShowReelModel" [ngClass]="{'fullscreen' : showReelFullScreen, 'normal' : !showReelFullScreen}">
+        </div> -->
+        <!-- <div class="ifream-perent" (started)="showReelDrag($event)" (click)="showReelDrag($event);$event.stopPropagation()" [zIndex]="showRealZIndex" [ngDraggable]="!showReelFullScreen" #showreelModel="ngDraggable" *ngIf="showShowReelModel" [ngClass]="{'fullscreen' : showReelFullScreen, 'normal' : !showReelFullScreen}">
           <app-showreel (pageEvent)="ShowReelEvent($event)" ></app-showreel>
-        </div>
-        <div style="left: 70px;top: 160px;width: 750px;height: 360px;"  (started)="archiveDrag($event)"  (click)="archiveDrag($event);$event.stopPropagation()" [zIndex]="archiveZIndex" [ngDraggable]="!archiveFullScreen" #archiveModel="ngDraggable" *ngIf="showArciveModel" [ngClass]="{'fullscreen' : archiveFullScreen, 'normal' : !archiveFullScreen}">
+        </div> -->
+        <!-- <div class="ifream-perent" (started)="archiveDrag($event)"  (click)="archiveDrag($event);$event.stopPropagation()" [zIndex]="archiveZIndex" [ngDraggable]="!archiveFullScreen" #archiveModel="ngDraggable" *ngIf="showArciveModel" [ngClass]="{'fullscreen' : archiveFullScreen, 'normal' : !archiveFullScreen}">
           <app-archive (pageEvent)="showArchiveEvent($event, project)" ></app-archive>
-        </div>
+        </div> -->
       </div>
     </div>
 </div>

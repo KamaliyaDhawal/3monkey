@@ -1,4 +1,4 @@
-<div class="detail-container">
+<div class="detail-container showreel-container" style="overflow: hidden;">
 
     <div class="detail-header">
         <div class="row">
@@ -6,15 +6,17 @@
       
           </div>
           <div class="col-2 text-right">
-            <fa name="window-maximize" (click)="fullScreen();$event.stopPropagation();" class="mr10"></fa>
-            <fa name="close" (click)="close();$event.stopPropagation();" ></fa>
+            <!-- <fa name="window-maximize" (click)="fullScreen();$event.stopPropagation();" class="mr10"></fa> -->
+            <img src="../../assets/images/expand.png" height="16px" width="16px" class="mr10" name="window-maximize" (click)="fullScreen();$event.stopPropagation();">
+            <img src="../../assets/images/cross.png" height="16px" width="16px"  name="close" (click)="close();$event.stopPropagation();">
+            <!-- <fa name="close" (click)="close();$event.stopPropagation();" ></fa> -->
           </div>
         </div>
     </div>
-      <div class="" [ngClass]="{'fullscreenmode' : isfullScreen , 'detail-section' : !isfullScreen}">
+      <div class="" [ngClass]="{'fullscreenmode' : isfullScreen , 'detail-section' : !isfullScreen}" style="overflow: hidden;">
         <!-- <iframe width="100%" height="95%" src="https://www.youtube.com/embed/vTUGrWHzhmw" frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-          <iframe width="100%" height="95%" [src]="srcFile | safe" frameborder="0"
+          <iframe width="100%" height="100%" [src]="srcFile | safe" frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     

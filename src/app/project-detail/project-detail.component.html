@@ -1,4 +1,4 @@
-<div class="detail-container">
+<div class="detail-container project-details">
 
 	<div class="detail-header">
 		<div class="row">
@@ -6,14 +6,17 @@
 				{{projectDetail.name}}
 			</div>
 			<div class="col-2 text-right">
-				<fa name="window-maximize" (click)="fullScreen();$event.stopPropagation();" class="mr10"></fa>
-				<fa name="close" (click)="close();$event.stopPropagation();"></fa>
+				<img src="../../assets/images/expand.png" height="16px" width="16px" name="window-maximize" (click)="fullScreen();$event.stopPropagation();" class="mr10">
+        		<img src="../../assets/images/cross.png" height="16px" width="16px" name="close" (click)="close();$event.stopPropagation();">
+
+				<!-- <fa name="window-maximize" (click)="fullScreen();$event.stopPropagation();" class="mr10"></fa>
+				<fa name="close" (click)="close();$event.stopPropagation();"></fa> -->
 			</div>
 		</div>
 	</div>
-	<div [ngClass]="{'fullscreenmode' : isfullScreen , 'detail-section' : !isfullScreen}">
+	<div [ngClass]="{'fullscreenmode' : isfullScreen , 'detail-section' : !isfullScreen}" style="overflow-y: scroll;">
 	<div class="row">
-		<div class="col-md-4">
+		<div class="col-md-4 col-sm-12">
 			<div class="paddin-10">
 				<h4 class="hub-heading" i18n="@@projectClient" *ngIf="lang==1">Client</h4>
 				<h4 class="hub-heading text-right" i18n="@@projectClient" *ngIf="lang==2">زبون</h4>
@@ -33,7 +36,7 @@
 			</div>
 		</div>
 
-		<div class="col-md-8">
+		<div class="col-md-8 col-sm-12">
 			<div *ngFor="let projectMedia of media" >
 				<br/>
 			<iframe width="100%" height="350" src="https://www.youtube.com/embed/vTUGrWHzhmw" frameborder="0"

@@ -31,3 +31,6 @@
     text-transform: uppercase;
     font-weight: bold;
 }
+.detail-header .heading .col-2 img{
+    cursor: pointer !important;
+}

@@ -1,4 +1,4 @@
-<div class="detail-container">
+<div class="detail-container archive-list"  style="overflow: hidden;">
 
   <div class="detail-header">
     <div class="row">
@@ -7,12 +7,15 @@
        <span *ngIf="lang==2">مشروع الأرشفة</span>
       </div>
       <div class="col-2 text-right">
-        <fa name="window-maximize" (click)="fullScreen();$event.stopPropagation();" class="mr10"></fa>
-        <fa name="close" (click)="close();$event.stopPropagation();"></fa>
+        <img src="../../assets/images/expand.png" height="16px" width="16px" name="window-maximize" (click)="fullScreen();$event.stopPropagation();" class="mr10">
+        <img src="../../assets/images/cross.png" height="16px" width="16px" name="close" (click)="close();$event.stopPropagation();">
+        
+        <!-- <fa name="window-maximize" (click)="fullScreen();$event.stopPropagation();" class="mr10"></fa>
+        <fa name="close" (click)="close();$event.stopPropagation();"></fa> -->
       </div>
     </div>
   </div>
-  <div class="" [ngClass]="{'fullscreenmode' : isfullScreen , 'detail-section' : !isfullScreen}">
+  <div class="" [ngClass]="{'fullscreenmode' : isfullScreen , 'detail-section' : !isfullScreen}"  style="overflow: hidden;">
       <div class="row">
           <a [routerLink]="getProjectUrl(project.id)" *ngFor="let project of projects" class="div20 projects" (click)="showProject(project);$event.stopPropagation()" >
               <img class="img-fluid" src="{{project.image_path}}">

@@ -63,3 +63,6 @@
     content: "\f065";
     color: #fff;
 }
+.detail-header .heading .col-2 img{
+    cursor: pointer !important;
+}
