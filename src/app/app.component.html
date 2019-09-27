@@ -1,0 +1,212 @@
+<div class="body" style="margin-bottom: 65px">
+      <router-outlet></router-outlet>
+</div>
+<div  class="content-area" *ngIf="showActions">
+            <a class="close-btn" href="#" (click)="showActions = false">X</a>
+
+      <div [ngClass]="(lang==2)?'flex-container arabic-lang':'flex-container'">
+            <div class="socical-Icons">
+                  <a href="">
+                        <img src="/assets/images/instagram.png" />
+                  </a>
+                  <a href="">
+                        <img src="/assets/images/youtube.png" />
+                  </a>
+                  <a href="">
+                        <img src="/assets/images/facebook.png" />
+                  </a>
+            </div>
+            <div class="menus">
+                  <ul>
+                        <li>
+                              <a (click)="gotoPage('about')"  [className]="menuType == 'about' ? 'active' : 'non-active'" i18n="@@About">
+                                    <span *ngIf="lang==1">About</span>
+                                    <span *ngIf="lang==2">حول</span>
+                              </a>
+                        </li>
+                        <li>
+                              <a (click)="gotoPage('contactus')" [className]="menuType == 'contactus' ? 'active' : 'non-active'" i18n="@@ContactUs">
+                                    <span *ngIf="lang==1">Contact Us</span>
+                                    <span *ngIf="lang==2">اتصل بنا</span>
+                              </a>
+                        </li>
+                        <li>
+                              <a (click)="gotoPage('location')" [className]="menuType == 'location' ? 'active' : 'non-active'" i18n="@@Location">
+                                    <span *ngIf="lang==1">Location</span>
+                                    <span *ngIf="lang==2">موقعك</span>
+                              </a>
+                        </li>
+                        <li>
+                              <a (click)="gotoPage('services')" [className]="menuType == 'services' ? 'active' : 'non-active'" i18n="@@Services">
+                                    <span *ngIf="lang==1">Services</span>
+                                    <span *ngIf="lang==2">خدمات</span>
+                              </a>
+                        </li>
+                        <li>
+                              <a (click)="gotoPage('monkeysWorld')" [className]="menuType == 'monkeysWorld' ? 'active' : 'non-active'"  i18n="@@MonkeysWorld">
+                                    <span *ngIf="lang==1">Monkeys World</span>
+                                    <span *ngIf="lang==2">عالم القرود</span>
+                              </a>
+                        </li>
+                  </ul>
+            </div>
+            <div class="action-content">
+                  <!-- about -->
+                  <div class="location row" *ngIf="menuType == 'about'" >
+                        <div class="col-md-12">
+                              <h3 class="head" i18n="@@weAreIn">{{ generals.general[0].about_headline }}</h3>
+                              <div class="location-info">
+                                    <div class="about-detail">
+                                         {{ generals.generalAbout[0].body }}
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                   <!-- contact us -->
+                   <div class="location row text-left" *ngIf="menuType == 'contactus'" >
+                              <div class="col-md-12">
+                                    <h3 class="head" i18n="@@weAreIn" *ngIf="lang==1">TALK TO US</h3>
+                                    <h3 class="head text-right" i18n="@@weAreIn" *ngIf="lang==2">تكلم معنا</h3>
+                                    <div [ngClass]="(lang==2)?'contact-info text-right':'contact-info'">
+                                          <label *ngIf="lang==1">Name</label>
+                                          <input type="text" name="name"  />
+                                          <label *ngIf="lang==2">اسم</label>
+                                    </div>
+                                    <div [ngClass]="(lang==2)?'contact-info text-right':'contact-info'">
+                                                <label *ngIf="lang==1">Email</label>
+                                                <input type="text" name="email" />
+                                                <label *ngIf="lang==2">البريد الإلكتروني</label>
+                                    </div>
+                                    <div [ngClass]="(lang==2)?'contact-info text-right':'contact-info'">
+                                                <label *ngIf="lang==1">Phone</label>
+                                                <input type="text" name="phone" />
+                                                <label *ngIf="lang==2">هاتف</label>
+                                    </div>
+                                    <span [ngClass]="(lang==2)?'contact-info text-right':'contact-info'">
+                                          <div class="messagebox">
+                                                      <label *ngIf="lang==1">Message</label>
+                                                      <label *ngIf="lang==2">رسالة</label>
+                                          </div>
+                                          <div class="messagetext">
+                                                      <textarea type="text" name="message" ></textarea>
+                                          </div>
+                                    </span>
+                                    <div class="buttonbox">
+                                          <button name="send" value="send" class="sendbtn">
+                                                <span *ngIf="lang==1">Send</span>
+                                                <span *ngIf="lang==2">إرسال</span>
+                                          </button>
+                                    </div>
+                              </div>
+                             
+                        </div>
+                  <!-- location -->
+                  <div class="location row" *ngIf="menuType == 'location'">
+                        <div class="col-md-6">
+                              <h3 class="head" i18n="@@weAreIn">{{ locations.Subheadings[0].sub_headline_1 }}</h3> 
+                              <div class="location-info" *ngFor="let location of locations.location">
+                                    <div class="location-header">{{ location.city }}</div>
+                                    <div class="location-detail">
+                                                {{ location.address1 }} <br />
+                                                {{ location.address2 }} <br />
+                                                {{ location.address3 }} <br />
+                                          <a href="{{ location.map_link }}" class="location-detail" target="_blank" >
+                                                <span *ngIf="lang==1">view map</span>
+                                                <span *ngIf="lang==2">إعرض الخريطة</span>
+                                          </a>
+                                    </div>
+                              </div>
+                              <h3 class="head" i18n="@@getInTouch">{{ locations.Subheadings[0].sub_headline_2 }} </h3>
+                              <div class="location-info">
+
+                                    <div class="location-detail">{{ locations.location[0].email }}</div>
+                              </div>
+                        </div>
+                        <div class="col-md-6">
+                              <h3 class="head" i18n="@@callUs">{{ locations.Subheadings[0].sub_headline_3 }}</h3>
+                              <div class="location-info"  *ngFor="let location of locations.location">
+                                    <div class="location-header">{{ location.city }}</div>
+                                    <div class="location-detail">
+                                                {{ location.phone }} 
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+
+                   <!-- services -->
+                   <div class="location row" *ngIf="menuType == 'services'" >
+                              <div class="col-md-6">
+                                          <h3 class="head" i18n="@@weAreIn">{{ generals.general[0].service_headline }}</h3>
+                                          <div class="location-info" *ngFor="let generalservice of generals.generalService" >
+                                                      <div class="location-header">{{ generalservice.sub_headline }}</div>
+                                                      <div class="service-detail">
+                                                                  {{ generalservice.body }}
+                                                      </div>
+                                          </div>         
+                                    </div>
+                  </div>
+
+                   <!-- monkey world -->
+                   <div class="location" *ngIf="menuType == 'monkeysWorld'" >
+                              <div class="row" >
+                                    <div class="col-md-6">
+                                          <h3 class="head" i18n="@@weAreIn">{{ monkeys.monkeysWorld[0].world_work_headline}}</h3>
+                                          <div class="row">
+                                                <div class="col-md-6 monkey-info "  *ngFor="let monkeyscountrywork of monkeys.monkeysWorldWork">
+                                                      <div class="monkey-detail monkey-work"> {{ monkeyscountrywork.country_name }} </div>
+                                                </div>
+                                          </div>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                          <h3 class="head monkey-from"  i18n="@@callUs" >{{ monkeys.monkeysWorld[0].world_origin_headline }}</h3>
+            
+                                          <div class="monkey-info"  *ngFor="let monkeyscountry of monkeys.monkeysWorldOrigin">
+                                          
+                                                      <div class="monkey-detail "> {{ monkeyscountry.country_name }} </div>
+
+                                          </div>
+                              
+                                    </div>
+                             
+                            
+                                    <div class="col-md-12">
+                                                <img src="{{ monkeys.monkeysWorld[0].map_file_path }}" class="map-image" />
+                                    </div>
+                              </div>
+                             
+                  </div>
+
+
+            </div>
+      </div>
+</div>
+<div class="footer">
+      <div class="row">
+            <div class="col-md-2">
+                  <button class="infoButton" (click)="showActions= !showActions">i</button>
+            </div>
+            <div class="col-md-10 text-right">
+                  <div class="footer-right">
+                        <div class="logo">
+                              <img src="/assets/images/logo.png" />
+                        </div>
+                        <div class="dateTime">
+                              {{getTime()}} <br />
+                              {{getDate()}}
+                        </div>
+                        <div class="langeng">
+                                    <span *ngIf="lang == 1" (click)="changelang(2)">عربى
+                                    </span>
+                                    <span *ngIf="lang == 2" (click)="changelang(1)">English</span>                                    
+                        </div>
+                                    <!-- <ul>
+                                                <li>
+                                                      <a (click)="changelang('english')"  [className]="language == 'english' ? 'active' : 'non-active'" i18n="@@Arabic">عربى</a>
+                                                </li>
+                                    </ul> -->
+                      
+                  </div>
+            </div>
+      </div>
+</div>

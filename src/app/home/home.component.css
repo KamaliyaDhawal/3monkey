@@ -1,0 +1,107 @@
+.main-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #dbdbda;
+}
+.projects{
+    margin-bottom: 10px;
+    max-height:110px;
+    text-align: center;
+    text-decoration: none;
+    padding-right: 0px;
+    padding-left: 0px;  
+}
+.projects h3, .projects a {
+    font-size: 11pt;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+    color: #000000;
+}
+.mtop-50{
+    margin-top: 25px;
+}
+.fullscreen{
+    position: fixed;
+    top: 0px !important;
+    left: 0px !important;
+    width: 100% !important;
+    height: 700px !important;
+}
+.normal{
+    position: absolute;
+    width: 700px;
+    max-width: 100%;
+}
+.sidetext{
+    width: 100%;
+    float:right;
+    position: relative;
+    padding: 0px 40px 0px 0px;
+    font-family: Futura LT Book;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 24pt;
+    color: #f89B39;
+    line-height: 35px;
+}
+.sidehash{
+    font-size: 19pt !important;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.footerbox{
+    position: fixed;
+    bottom: 60px;
+    right: 0px;
+    width: 29%;
+}
+.tcenter{
+    text-align: right !important;
+}
+.img-fluid {
+    max-width: 50% !important;
+    max-height: calc(100% - 25px) !important;
+}
+.projectrow{
+    flex: 0 0 34.6666% !important; 
+    padding-left: 0px !important;
+}
+.archivediv{
+    margin-left: -50px !important;
+    max-width: 220px;
+}
+.showreeldiv{
+    position: absolute;
+    right: -58px;
+    text-align: right;
+}
+.reeltext{
+    position: absolute;
+    margin: auto;
+    width: 128px;
+    right: 0px;
+    text-align: center;
+}
+.arch3{ 
+    margin-top:2px !important;
+}
+
+@media only screen and (max-width: 425px) {
+    .sidehash{
+        font-size: 16pt !important;
+    }
+
+    .img-fluid {
+        max-width: 35% !important;
+    }
+
+    .projects-list  .projects  .img-fluid {
+        max-width: 90% !important;
+        padding-right: 5% !important;
+        padding-left: 5% !important;
+    }
+}

@@ -1,0 +1,115 @@
+.contact-info textarea{ margin-left: 0px; }
+
+@media only screen and (max-width: 1920px) {
+
+}
+@media only screen and (min-width: 1800px) {
+ 
+}
+@media only screen and (max-width: 1800px) {
+
+}
+@media only screen and (max-width: 1450px) {
+.arch3 {
+    font-size: 13px !important;
+}
+a.col-md-6.projects h3 {
+    font-size: 13px !important;
+    width: 125px;
+    margin: 0px auto;
+}
+h3.reeltext {
+    font-size: 13px !important;
+}
+h3.head {
+    font-size: 16px !important;
+}
+a.active, .non-active, .hub-heading {
+    font-size: 16px !important;
+}
+a.active, .non-active:hover {
+    font-weight: 700 !important;
+    text-decoration: underline !important;
+}
+a.close-btn {
+    margin: 0px 10px;
+    font-size: 17px !important;
+}
+.about-detail, .contact-info, .location-detail, .messagebox, button.sendbtn, .service-detail, .monkey-detail, .monkey-work, .hub-part, .hub-detail {
+    font-size: 13px !important;
+}
+.location-info, .location-header {
+    font-size: 14px !important;
+}
+.map-image {
+    width: 80% !important;
+    margin: 0 auto !important;
+    display: block !important;
+}
+a.div20.projects h3 {
+    font-size: 13px !important;
+}
+.detail-section {
+    height: 100% !important;
+}
+.dateTime[_ngcontent-rhg-c0] {
+    font-size: 9pt;
+}
+}
+@media only screen and (max-width: 1366px) {
+
+    
+}
+
+
+@media only screen and (max-width: 1281px){
+}
+
+
+@media only screen and (max-width: 1153px) {
+
+}
+@media only screen and (max-width: 981px) {
+    .dateTime {
+    display: none !important;
+}
+ .footer-right{
+
+margin: -27px 30px 20px 0 !important;
+}
+.infoButton {
+    margin: -18px 0 !important;
+}
+.footer{
+    padding: 22px 0px 2px 6px !important;
+}
+.mtop-50 {
+    background: #dbdbda;
+}
+}
+@media only screen and (max-width: 800px) {
+
+}
+@media only screen and (max-width: 800px) {
+
+}
+@media only screen and (max-width: 650px) {
+ 
+}
+
+@media only screen and (max-width: 321px) {
+ 
+}
+@media only screen and (max-width: 425px) {
+   
+
+}
+@media not all, only screen and (min--moz-device-pixel-ratio: 2), not all, not all, only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+}
+@media only screen and (max-height: 769px) and (min-width: 1020px) {
+ 
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1) {
+ 
+}

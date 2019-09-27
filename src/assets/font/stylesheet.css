@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Futura LT Book';
+    src: url('FuturaLT-Book.eot');
+    src: url('FuturaLT-Book.eot?#iefix') format('embedded-opentype'),
+        url('FuturaLT-Book.woff2') format('woff2'),
+        url('FuturaLT-Book.woff') format('woff'),
+        url('FuturaLT-Book.ttf') format('truetype'),
+        url('FuturaLT-Book.svg#FuturaLT-Book') format('svg');
+      font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GE Dinar One';
+    src: url('GEDinarOne-Medium.eot');
+    src: url('GEDinarOne-Medium.eot?#iefix') format('embedded-opentype'),
+        url('GEDinarOne-Medium.woff2') format('woff2'),
+        url('GEDinarOne-Medium.woff') format('woff'),
+        url('GEDinarOne-Medium.ttf') format('truetype'),
+        url('GEDinarOne-Medium.svg#GEDinarOne-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GE Dinar One';
+    src: url('GEDinarOne-Bold.eot');
+    src: url('GEDinarOne-Bold.eot?#iefix') format('embedded-opentype'),
+        url('GEDinarOne-Bold.woff2') format('woff2'),
+        url('GEDinarOne-Bold.woff') format('woff'),
+        url('GEDinarOne-Bold.ttf') format('truetype'),
+        url('GEDinarOne-Bold.svg#GEDinarOne-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GE Dinar One';
+    src: url('GEDinarOne.eot');
+    src: url('GEDinarOne.eot?#iefix') format('embedded-opentype'),
+        url('GEDinarOne.woff2') format('woff2'),
+        url('GEDinarOne.woff') format('woff'),
+        url('GEDinarOne.ttf') format('truetype'),
+        url('GEDinarOne.svg#GEDinarOne') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura LT Book';
+    src: url('FuturaLT-BoldOblique.eot');
+    src: url('FuturaLT-BoldOblique.eot?#iefix') format('embedded-opentype'),
+        url('FuturaLT-BoldOblique.woff2') format('woff2'),
+        url('FuturaLT-BoldOblique.woff') format('woff'),
+        url('FuturaLT-BoldOblique.ttf') format('truetype'),
+        url('FuturaLT-BoldOblique.svg#FuturaLT-BoldOblique') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura LT Book';
+    src: url('FuturaLT-Bold.eot');
+    src: url('FuturaLT-Bold.eot?#iefix') format('embedded-opentype'),
+        url('FuturaLT-Bold.woff2') format('woff2'),
+        url('FuturaLT-Bold.woff') format('woff'),
+        url('FuturaLT-Bold.ttf') format('truetype'),
+        url('FuturaLT-Bold.svg#FuturaLT-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura LT Book';
+    src: url('FuturaLT-BookOblique.eot');
+    src: url('FuturaLT-BookOblique.eot?#iefix') format('embedded-opentype'),
+        url('FuturaLT-BookOblique.woff2') format('woff2'),
+        url('FuturaLT-BookOblique.woff') format('woff'),
+        url('FuturaLT-BookOblique.ttf') format('truetype'),
+        url('FuturaLT-BookOblique.svg#FuturaLT-BookOblique') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GE Dinar One';
+    src: url('GEDinarOne-Light.eot');
+    src: url('GEDinarOne-Light.eot?#iefix') format('embedded-opentype'),
+        url('GEDinarOne-Light.woff2') format('woff2'),
+        url('GEDinarOne-Light.woff') format('woff'),
+        url('GEDinarOne-Light.ttf') format('truetype'),
+        url('GEDinarOne-Light.svg#GEDinarOne-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+

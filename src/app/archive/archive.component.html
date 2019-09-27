@@ -1,0 +1,23 @@
+<div class="detail-container">
+
+  <div class="detail-header">
+    <div class="row">
+      <div class="col-10 heading">
+       <span *ngIf="lang==1">ARCHIVE PROJECT</span>
+       <span *ngIf="lang==2">مشروع الأرشفة</span>
+      </div>
+      <div class="col-2 text-right">
+        <fa name="window-maximize" (click)="fullScreen();$event.stopPropagation();" class="mr10"></fa>
+        <fa name="close" (click)="close();$event.stopPropagation();"></fa>
+      </div>
+    </div>
+  </div>
+  <div class="" [ngClass]="{'fullscreenmode' : isfullScreen , 'detail-section' : !isfullScreen}">
+      <div class="row">
+          <a [routerLink]="getProjectUrl(project.id)" *ngFor="let project of projects" class="div20 projects" (click)="showProject(project);$event.stopPropagation()" >
+              <img class="img-fluid" src="{{project.image_path}}">
+              <h3>{{project.name}}</h3> 
+          </a>
+      </div>
+  </div>
+</div>

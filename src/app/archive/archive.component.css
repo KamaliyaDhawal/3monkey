@@ -1,0 +1,28 @@
+.detail-container{
+    border: 1px solid #000;
+    overflow: auto;
+    height: 100%;
+    background: #ffffff !important;
+}
+.detail-header{
+    background: #464646;
+    padding: 10px;
+    border-bottom: 1px solid #000;
+    font-size: 16px;
+}
+.detail-section{
+    padding: 10px;
+    max-height: 600px;
+    overflow: auto;
+}
+.fullscreenmode{
+    padding: 10px;
+    max-height: calc(100% - 40px);
+    overflow: auto;
+}
+.mr10{
+    margin-right: 10px;
+}
+.fullscreenmode>iframe{
+    height: 480px !important;
+}

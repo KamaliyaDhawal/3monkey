@@ -1,0 +1,54 @@
+@media only screen and (max-width: 425px) {
+
+  .sidetext {
+  	width: auto;
+  	margin-top: 50px;
+  	font-size: 18pt !important;
+  }
+
+  .footerbox {
+  	width: auto !important;
+  	position: absolute !important;
+  	top: 0px;
+  }
+
+  .sidehash {
+  	position: absolute !important;
+  	top: 0 !important;
+  	font-size: 16pt !important;
+  	margin-left: -160px !important;
+  }
+
+  .showreeldiv {
+  	position: absolute !important;
+    left: 0 !important;
+    text-align: left !important;
+    top: -660px !important;
+  }
+
+  .showreeldiv .img-fluid {
+  	max-width: 35% !important;
+  }
+
+  .reeltext {
+    width: auto !important;
+    left: -250px !important;
+  }
+
+  .projects-list {
+  	margin-top: 250px;
+  }
+
+  .projects-list  .projects {
+  	/*max-width: 40% !important;*/
+  	/*padding: 15% 15% 0% 15% !important;*/
+  	/*margin-left: 50px;
+    margin-right: 50px*/;
+    /*padding-right: 10% !important;*/
+  }
+
+  .projects-list  .projects  .img-fluid {
+  	max-width: 160px !important;
+
+  }
+}

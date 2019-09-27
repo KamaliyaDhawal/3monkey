@@ -1,0 +1,17 @@
+.arabic-lang {
+	/*direction:rtl;*/
+	text-align: right !important;
+}
+.arabic-lang .text-right {
+	text-align: right !important;
+}
+.arabic-lang .sidetext, .arabic-lang .menus, .arabic-lang .location, .arabic-lang .head, .arabic-lang .projects, .arabic-lang .detail-header, .arabic-lang .detail-section {
+	font-family: 'HelveticaNeueLT Arabic' !important;
+}
+.arabic-lang .sidetext, .arabic-lang .detail-header {
+	font-weight: bold;
+}
+.arabic-lang .detail-header .heading {
+	text-align: left !important;
+}
+

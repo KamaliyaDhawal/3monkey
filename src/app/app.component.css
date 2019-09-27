@@ -1,0 +1,179 @@
+.footer{
+    position: fixed;
+    background: #464646;
+    padding: 6px 0px 2px 6px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 99999999999;  
+}
+.infoButton{
+    font-size: 16pt;
+    background: transparent;
+    border: 1px solid #f89B39;
+    color: #fff;
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+    text-decoration: none;
+}
+.footer-right {
+    text-align: right !important;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+}
+.dateTime{
+    color: #fff;
+    display: inline-block;
+    font-size: 11pt;
+    padding: 0px 20px 0px 0px;
+}
+
+.logo img{
+    width: 150px;
+    margin-right: 25px;
+    padding: 0px 25px 0px 15px;
+}
+.content-area{
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+    padding:20px;
+    z-index: 9999;
+    background: rgba(70,70,70, 0.96);
+}
+.socical-Icons{
+    width: 40px;
+    text-align: center;
+}
+.socical-Icons img{
+    width: 40px;
+    margin-bottom: 20px;
+}
+.flex-container{
+    margin-top: 30px;
+    display: flex;
+    align-items: flex-end;
+}
+.menus ul{
+    list-style: none;
+}
+.menus ul li a{
+    padding: 20px 0;
+    display: block;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+.menus ul li a:hover{
+    color: #f89B39 !important;
+}
+.active{
+    color: #f89B39 !important;
+    text-decoration: underline !important;
+}
+.action-content{
+    min-width: 700px;
+    max-width: 100%;
+    padding-left: 40px 
+}
+.location .head{
+    font-size: 18pt;
+    color: #f89B39;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-bottom:20px;
+
+}
+.location-info{
+    margin-bottom:20px;
+}
+.location-header{
+    font-size: 12pt;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.location-detail{
+    font-size: 12pt;
+    color: #fff;
+}
+.monkey-info{
+    margin-bottom:2px;
+    padding-left: 0px !important;
+}
+.monkey-detail{
+    font-size: 12pt;
+    color: #fff;
+    text-transform: uppercase;
+}
+.close-btn{
+    font-size: 24pt;
+    color: #ffffff !important;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    text-decoration: none;
+    font-style: italic;
+    font-family: "Futura LT Book";
+     text-transform: uppercase;
+}
+.langeng{
+    color: #fff;
+    display: inline-block;
+    font-size: 11pt;
+    font-family: "GE Dinar One";
+    font-weight: normal;
+    margin-left: 24px;
+    margin-right: 20px;
+}
+.map-image{
+    width: 100%;
+    margin: auto;
+}
+.location{
+    width:650px;
+    height:480px;
+}
+.about-detail, .service-detail{
+    width: 290px;
+    text-align: justify;
+    color: #fff;
+}
+.monkey-work{
+    color: #f89B39;
+}
+.monkey-from{
+    color: #fff !important;
+}
+.contact-info input,.contact-info textarea{
+    width: 80%;
+    margin: 15px 0px 15px 15px;
+    background: #d4cbcbd4;
+    border: none !important;
+}
+.contact-info label,.messagebox label{
+    width:50px;
+    color:white;
+}
+.messagebox{
+    margin-top:20px;
+}
+.messagetext textarea{
+    width:90%;
+    background: #d4cbcbd4;
+    border: none !important;
+    height:150px;
+    margin-left: 0px !important;
+}
+.sendbtn{
+    color: #ffff;
+    background: #bdb6b6;
+    border: none !important;
+    padding: 5px 15px 5px 15px;
+    float: right;
+    margin-right: 60px;
+}
