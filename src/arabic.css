@@ -14,4 +14,27 @@
 .arabic-lang .detail-header .heading {
 	text-align: left !important;
 }
-
+.arabic-lang .sendbtn {
+	margin-right: 0px !important;
+}
+.arabic-lang .aboutdiv .head{
+	/* text-align: left; */
+	width: 47%;
+}
+.arabic-lang .messagetext{
+	margin: 15px 0px 15px 15px !important;
+}
+.arabic-lang .contact-info input, .contact-info textarea{
+	text-align:right;
+}
+.engbtn{
+	font-family: "Futura LT Book" !important;
+}
+.arabic-lang .messagetext textarea{
+	margin-right: 0px !important;
+	width:92% !important;
+	text-align:right;
+}
+.arabic-lang .monkey-info{
+	padding-right: 0px !important;
+}

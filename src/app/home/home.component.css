@@ -8,7 +8,7 @@
 }
 .projects{
     /*margin-bottom: 10px;*/
-    max-height:110px;
+    max-height:95px;
     text-align: center;
     text-decoration: none;
     padding-right: 0px;
@@ -23,7 +23,7 @@
     color: #000000;
 }
 .mtop-50{
-    margin-top: 25px;
+    margin-top: 20px;
 }
 .fullscreen{
     position: fixed;
@@ -50,7 +50,7 @@
     line-height: 35px;
 }
 .sidehash{
-    font-size: 19pt !important;
+    font-size: 19pt;
     margin-top:10px;
     margin-bottom:10px;
 }
@@ -63,19 +63,13 @@
 .tcenter{
     text-align: right !important;
 }
-.img-fluid {
-    /*max-width: 50% !important;
-    max-height: calc(100% - 25px) !important;*/
-    max-height: 90px !important;
-    max-width: auto !important;
-    margin-top: 10px !important;
-}
+
 .projectrow{
     flex: 0 0 34.6666% !important; 
     padding-left: 0px !important;
 }
 .archivediv{
-    margin-left: -50px !important;
+    margin-left: -50px;
     max-width: 220px;
 }
 .showreeldiv{

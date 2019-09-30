@@ -6,9 +6,8 @@ body{
     margin-left:0px !important;
     margin-right:0px !important;
 }
-.img-fluid {
-    max-width: 50% !important;
-    max-height: calc(100% - 25px) !important;
+.messagetext textarea{
+    margin-left: 0px !important
 }
 .projects{
     margin-bottom: 10px;

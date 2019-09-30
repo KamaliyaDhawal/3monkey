@@ -52,7 +52,7 @@
             </div>
             <div class="action-content">
                   <!-- about -->
-                  <div class="location row" *ngIf="menuType == 'about'" >
+                  <div class="location row aboutdiv" *ngIf="menuType == 'about'" >
                         <div class="col-md-12">
                               <h3 class="head" i18n="@@weAreIn">{{ generals.general[0].about_headline }}</h3>
                               <div class="location-info">
@@ -101,7 +101,7 @@
                              
                         </div>
                   <!-- location -->
-                  <div class="location row" *ngIf="menuType == 'location'">
+                  <div class="location row " *ngIf="menuType == 'location'">
                         <div class="col-md-6">
                               <h3 class="head" i18n="@@weAreIn">{{ locations.Subheadings[0].sub_headline_1 }}</h3> 
                               <div class="location-info" *ngFor="let location of locations.location">
@@ -147,7 +147,7 @@
                   </div>
 
                    <!-- monkey world -->
-                   <div class="location" *ngIf="menuType == 'monkeysWorld'" >
+                   <div class="location monkeyworlddiv" *ngIf="menuType == 'monkeysWorld'" >
                               <div class="row" >
                                     <div class="col-md-6">
                                           <h3 class="head" i18n="@@weAreIn">{{ monkeys.monkeysWorld[0].world_work_headline}}</h3>
@@ -196,9 +196,9 @@
                               {{getDate()}}
                         </div>
                         <div class="langeng">
-                                    <span *ngIf="lang == 1" (click)="changelang(2)">عربى
+                                    <span *ngIf="lang == 1" (click)="changelang(2)" class="arbtn" >عربى
                                     </span>
-                                    <span *ngIf="lang == 2" (click)="changelang(1)">English</span>                                    
+                                    <span *ngIf="lang == 2" (click)="changelang(1)" class="engbtn">English</span>                                    
                         </div>
                                     <!-- <ul>
                                                 <li>

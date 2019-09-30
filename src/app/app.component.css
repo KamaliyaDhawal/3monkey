@@ -154,8 +154,9 @@
 }
 .contact-info input,.contact-info textarea{
     width: 80%;
-    margin: 15px 0px 15px 15px;
+    margin: 15px;
     background: #d4cbcbd4;
+    padding: 8px;
     border: none !important;
 }
 .contact-info label,.messagebox label{
@@ -169,8 +170,7 @@
     width:90%;
     background: #d4cbcbd4;
     border: none !important;
-    height:150px;
-    margin-left: 0px !important;
+    height:130px;
 }
 .sendbtn{
     color: #ffff;

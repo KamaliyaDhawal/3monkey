@@ -29,3 +29,9 @@
 .detail-header .heading .col-2 img{
     cursor: pointer !important;
 }
+.col-2 img{
+    cursor : pointer;
+}
+.col-2{
+    padding-right: 0px;
+}
