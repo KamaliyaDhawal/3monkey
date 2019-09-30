@@ -8,12 +8,12 @@
 }
 .projects{
     /*margin-bottom: 10px;*/
-    max-height:95px;
+    /* max-height:95px; */
     text-align: center;
     text-decoration: none;
     padding-right: 0px;
     padding-left: 0px;  
-    margin-top: 10px !important;
+    margin-top: 30px; 
 }
 .projects h3, .projects a {
     font-size: 11pt;
@@ -71,11 +71,6 @@
 .archivediv{
     margin-left: -50px;
     max-width: 220px;
-}
-.showreeldiv{
-    position: absolute;
-    right: -58px;
-    text-align: right;
 }
 .reeltext{
     position: absolute;

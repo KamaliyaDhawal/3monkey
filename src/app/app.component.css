@@ -18,7 +18,7 @@
     text-decoration: none;
 }
 .footer-right {
-    text-align: right !important;
+    text-align: right;
     justify-content: flex-end;
     align-items: center;
     display: flex;
@@ -35,40 +35,19 @@
     margin-right: 25px;
     padding: 0px 25px 0px 15px;
 }
-.content-area{
-    position: fixed;
-    bottom: 50px;
-    left: 0;
-    padding:20px;
-    z-index: 9999;
-    background: rgba(70,70,70, 0.96);
-}
-.socical-Icons{
-    width: 40px;
-    text-align: center;
-}
-.socical-Icons img{
-    width: 40px;
-    margin-bottom: 20px;
-}
+
 .flex-container{
     margin-top: 30px;
     display: flex;
     align-items: flex-end;
 }
 .menus {
-    min-width: 174px !important;
+    min-width: 174px;
 }
 .menus ul{
     list-style: none;
 }
-.menus ul li a{
-    padding: 20px 0;
-    display: block;
-    font-size: 24px;
-    color: #fff;
-    cursor: pointer;
-}
+
 .menus ul li a:hover{
     color: #f89B39 !important;
 }
@@ -87,7 +66,7 @@
     font-weight: bold;
     font-style: italic;
     text-transform: uppercase;
-    margin-bottom:20px;
+    margin-bottom:60px;
 
 }
 .location-info{
@@ -105,7 +84,7 @@
 }
 .monkey-info{
     margin-bottom:2px;
-    padding-left: 0px !important;
+    padding-left: 0px;
 }
 .monkey-detail{
     font-size: 12pt;
@@ -137,10 +116,7 @@
     width: 100%;
     margin: auto;
 }
-.location{
-    width:650px;
-    height:480px;
-}
+
 .about-detail, .service-detail{
     width: 290px;
     text-align: justify;

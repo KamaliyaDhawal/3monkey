@@ -5,50 +5,52 @@
             <a class="close-btn" href="#" (click)="showActions = false">X</a>
 
       <div [ngClass]="(lang==2)?'flex-container arabic-lang':'flex-container'">
-            <div class="socical-Icons">
-                  <a href="">
-                        <img src="/assets/images/instagram.png" />
-                  </a>
-                  <a href="">
-                        <img src="/assets/images/youtube.png" />
-                  </a>
-                  <a href="">
-                        <img src="/assets/images/facebook.png" />
-                  </a>
-            </div>
-            <div class="menus">
-                  <ul>
-                        <li>
-                              <a (click)="gotoPage('about')"  [className]="menuType == 'about' ? 'active' : 'non-active'" i18n="@@About">
-                                    <span *ngIf="lang==1">About</span>
-                                    <span *ngIf="lang==2">حول</span>
-                              </a>
-                        </li>
-                        <li>
-                              <a (click)="gotoPage('contactus')" [className]="menuType == 'contactus' ? 'active' : 'non-active'" i18n="@@ContactUs">
-                                    <span *ngIf="lang==1">Contact Us</span>
-                                    <span *ngIf="lang==2">اتصل بنا</span>
-                              </a>
-                        </li>
-                        <li>
-                              <a (click)="gotoPage('location')" [className]="menuType == 'location' ? 'active' : 'non-active'" i18n="@@Location">
-                                    <span *ngIf="lang==1">Location</span>
-                                    <span *ngIf="lang==2">موقعك</span>
-                              </a>
-                        </li>
-                        <li>
-                              <a (click)="gotoPage('services')" [className]="menuType == 'services' ? 'active' : 'non-active'" i18n="@@Services">
-                                    <span *ngIf="lang==1">Services</span>
-                                    <span *ngIf="lang==2">خدمات</span>
-                              </a>
-                        </li>
-                        <li>
-                              <a (click)="gotoPage('monkeysWorld')" [className]="menuType == 'monkeysWorld' ? 'active' : 'non-active'"  i18n="@@MonkeysWorld">
-                                    <span *ngIf="lang==1">Monkeys World</span>
-                                    <span *ngIf="lang==2">عالم القرود</span>
-                              </a>
-                        </li>
-                  </ul>
+            <div class="menudiv">
+                  <div class="socical-Icons">
+                        <a href="">
+                              <img src="/assets/images/instagram.png" />
+                        </a>
+                        <a href="">
+                              <img src="/assets/images/youtube.png" />
+                        </a>
+                        <a href="">
+                              <img src="/assets/images/facebook.png" />
+                        </a>
+                  </div>
+                  <div class="menus">
+                        <ul>
+                              <li>
+                                    <a (click)="gotoPage('about')"  [className]="menuType == 'about' ? 'active' : 'non-active'" i18n="@@About">
+                                          <span *ngIf="lang==1">About</span>
+                                          <span *ngIf="lang==2">حول</span>
+                                    </a>
+                              </li>
+                              <li>
+                                    <a (click)="gotoPage('contactus')" [className]="menuType == 'contactus' ? 'active' : 'non-active'" i18n="@@ContactUs">
+                                          <span *ngIf="lang==1">Contact Us</span>
+                                          <span *ngIf="lang==2">اتصل بنا</span>
+                                    </a>
+                              </li>
+                              <li>
+                                    <a (click)="gotoPage('location')" [className]="menuType == 'location' ? 'active' : 'non-active'" i18n="@@Location">
+                                          <span *ngIf="lang==1">Location</span>
+                                          <span *ngIf="lang==2">موقعك</span>
+                                    </a>
+                              </li>
+                              <li>
+                                    <a (click)="gotoPage('services')" [className]="menuType == 'services' ? 'active' : 'non-active'" i18n="@@Services">
+                                          <span *ngIf="lang==1">Services</span>
+                                          <span *ngIf="lang==2">خدمات</span>
+                                    </a>
+                              </li>
+                              <li>
+                                    <a (click)="gotoPage('monkeysWorld')" [className]="menuType == 'monkeysWorld' ? 'active' : 'non-active'"  i18n="@@MonkeysWorld">
+                                          <span *ngIf="lang==1">Monkeys World</span>
+                                          <span *ngIf="lang==2">عالم القرود</span>
+                                    </a>
+                              </li>
+                        </ul>
+                  </div>
             </div>
             <div class="action-content">
                   <!-- about -->
@@ -135,13 +137,15 @@
 
                    <!-- services -->
                    <div class="location row" *ngIf="menuType == 'services'" >
-                              <div class="col-md-6">
+                              <div class="col-md-12">
                                           <h3 class="head" i18n="@@weAreIn">{{ generals.general[0].service_headline }}</h3>
-                                          <div class="location-info" *ngFor="let generalservice of generals.generalService" >
+                                          <div class="location-info row" >
+                                                <div class="col-md-6 servicedetail" *ngFor="let generalservice of generals.generalService" >
                                                       <div class="location-header">{{ generalservice.sub_headline }}</div>
                                                       <div class="service-detail">
                                                                   {{ generalservice.body }}
                                                       </div>
+                                                </div>         
                                           </div>         
                                     </div>
                   </div>
@@ -149,7 +153,7 @@
                    <!-- monkey world -->
                    <div class="location monkeyworlddiv" *ngIf="menuType == 'monkeysWorld'" >
                               <div class="row" >
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 contentblock">
                                           <h3 class="head" i18n="@@weAreIn">{{ monkeys.monkeysWorld[0].world_work_headline}}</h3>
                                           <div class="row">
                                                 <div class="col-md-6 monkey-info "  *ngFor="let monkeyscountrywork of monkeys.monkeysWorldWork">
@@ -158,7 +162,7 @@
                                           </div>
 
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 contentblock">
                                           <h3 class="head monkey-from"  i18n="@@callUs" >{{ monkeys.monkeysWorld[0].world_origin_headline }}</h3>
             
                                           <div class="monkey-info"  *ngFor="let monkeyscountry of monkeys.monkeysWorldOrigin">

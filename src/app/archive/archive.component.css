@@ -24,7 +24,7 @@
     margin-right: 10px;
 }
 .fullscreenmode>iframe{
-    height: 480px !important;
+    height: 480px;
 }
 .detail-header .heading .col-2 img{
     cursor: pointer !important;

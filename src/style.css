@@ -1,115 +1,443 @@
-.contact-info textarea{ margin-left: 0px; }
-
-@media only screen and (max-width: 1920px) {
-
-}
-@media only screen and (min-width: 1800px) {
- 
-}
-@media only screen and (max-width: 1800px) {
-
-}
-@media only screen and (max-width: 1450px) {
-.arch3 {
-    font-size: 13px !important;
-}
-a.col-md-6.projects h3 {
-    font-size: 13px !important;
-    width: 125px;
-    margin: 0px auto;
-}
-h3.reeltext {
-    font-size: 13px !important;
-}
-h3.head {
-    font-size: 16px !important;
-}
-a.active, .non-active, .hub-heading {
-    font-size: 16px !important;
-}
-a.active, .non-active:hover {
-    font-weight: 700 !important;
-    text-decoration: underline !important;
-}
-a.close-btn {
-    margin: 0px 10px;
-    font-size: 17px !important;
-}
-.about-detail, .contact-info, .location-detail, .messagebox, button.sendbtn, .service-detail, .monkey-detail, .monkey-work, .hub-part, .hub-detail {
-    font-size: 13px !important;
-}
-.location-info, .location-header {
-    font-size: 14px !important;
-}
-.map-image {
-    width: 80% !important;
-    margin: 0 auto !important;
-    display: block !important;
-}
-a.div20.projects h3 {
-    font-size: 13px !important;
-}
-.detail-section {
-    height: 100% !important;
-}
-.dateTime[_ngcontent-rhg-c0] {
-    font-size: 9pt;
-}
-}
-@media only screen and (max-width: 1366px) {
-
+@media only screen and (min-width: 2560px) {
+    .img-fluid {
+        max-height: 100px !important;
+        max-width: auto !important;
+    }
+    .img-fluid {
+        max-width: 55% !important;
+       }
+    .projects{
+        margin: 10px 0 70px 0!important;
+    }
+    .projects h3, .projects a {
+        font-size: 15pt !important;
+    }
+    .sidehash{
+        font-size: 28pt !important;
+        text-align:right;
+    }
+    .sidetext{
+        font-size: 44pt !important;
+        line-height: 62px !important;
+    }
+    .archivediv img.img-fluid {
+        width: 46% !important;
+    }
+    }
     
-}
-
-
-@media only screen and (max-width: 1281px){
-}
-
-
-@media only screen and (max-width: 1153px) {
-
-}
-@media only screen and (max-width: 981px) {
-    .dateTime {
-    display: none !important;
-}
- .footer-right{
-
-margin: -27px 30px 20px 0 !important;
-}
-.infoButton {
-    margin: -18px 0 !important;
-}
-.footer{
-    padding: 22px 0px 2px 6px !important;
-}
-.mtop-50 {
-    background: #dbdbda;
-}
-}
-@media only screen and (max-width: 800px) {
-
-}
-@media only screen and (max-width: 800px) {
-
-}
-@media only screen and (max-width: 650px) {
- 
-}
-
-@media only screen and (max-width: 321px) {
- 
-}
-@media only screen and (max-width: 425px) {
-   
-
-}
-@media not all, only screen and (min--moz-device-pixel-ratio: 2), not all, not all, only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-}
-@media only screen and (max-height: 769px) and (min-width: 1020px) {
- 
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1) {
- 
-}
+    @media only screen and (min-width: 1920px) {
+    .contact-info textarea{ margin-left: 0px; }
+    .langeng{cursor: pointer;}
+    .detail-container{border: none !important;}
+    .detail-header{ border-bottom: none !important;}
+    .sendbtn{
+        margin-right: 60px !important;
+    }
+    .content-area{
+        position: fixed;
+        bottom: 50px;
+        left: 0;
+        padding:20px;
+        z-index: 9999;
+        background: rgba(70,70,70, 0.96);
+        height:80%;
+        width:80%;
+    }
+    .location{
+        width:650px;
+        height:480px;
+    }
+    .location, .head {
+        padding: 0px 0px 0;
+    }
+    .socical-Icons{
+        float: left;
+        margin-top: 145%;
+    }
+    .menus{
+        margin-left: 40px;
+        margin-top: 30% !important;
+    }
+    .action-content{
+        padding-left: 32% !important;
+    }
+    .menudiv{
+        position: absolute;
+        bottom: 0px;
+    }
+    .monkeyworlddiv,.location{
+        width: 1350px !important; 
+    }
+    .map-image{
+        width: 67% !important;
+    }
+    .socical-Icons{
+        width: 50px;
+        text-align: center;
+    }
+    .socical-Icons img{
+        width: 50px;
+        margin-bottom: 20px; 
+    }
+    .menus ul li a{
+        padding: 20px 0;
+        display: block;
+        font-size: 24px;
+        color: #fff !important;
+        cursor: pointer;
+        line-height:60px;
+    }
+    .contact-info input{
+        width: 69% !important;
+    }
+    .contact-info textarea{
+        width: 75% !important;
+        height: 250px !important;
+    }
+    .messagebox{
+        margin-top: 50px;
+    }
+    .buttonbox{
+        width: 1036px;
+    }
+    .contact-info{
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .sendbtn{
+        padding: 10px 20px 10px 20px !important;
+        font-size: 20px;
+    }
+    .servicedetail{
+        margin-top:20px;
+    }
+    .about-detail, .service-detail {
+        width: 400px !important;
+    }
+    .arch3 {
+        margin-top: 2px !important;
+        width: 100px !important;
+        margin: 0 auto 0 !important;
+    }
+    .reeltext {
+        width: 98px !important;
+    }
+    .col-md-6 {
+        max-width: 35% !important;
+    }
+    .archivediv{
+        margin-left: -240px !important;
+        max-width: 220px;
+    }
+    .details-ifream-perent {
+        left: 910px !important;
+        top: 217px !important;
+        min-width: 1330px !important;
+        height: 680px !important;
+    }
+    .img-fluid {
+        max-height: 60px !important;
+        max-width: auto !important;
+    }
+    .img-fluid {
+        max-width: 25% !important;
+    }
+    .projects{
+        margin: 10px 0 30px 0!important;
+        padding: 0px;
+    }
+    .projects h3, .projects a {
+        font-size: 15pt !important;
+        width: 140px;
+        margin: 0 auto 0;
+    }
+    .sidehash{
+        font-size: 28pt !important;
+        text-align:right;
+    }
+    .sidetext{
+        font-size: 44pt !important;
+        line-height: 62px !important;
+    }
+    .archivediv img.img-fluid {
+        width: 46% !important;
+    }
+    }
+    @media only screen and (min-width: 1800px) {
+    }
+    
+    @media only screen and (max-width: 1800px) {
+    }
+    
+    @media only screen and (max-width: 1450px) {
+    
+    .menus ul li a {
+        line-height: 50px !important;
+        padding: 0px 0 0 !important;
+        line-height: 78px !important;
+    }
+    .menudiv .menus ul {
+        margin: 300px 0px 0 0px;
+    }
+    .socical-Icons{
+        float: left;
+        margin-top: 241% !important;
+        width: 40px !important;
+    }
+    .socical-Icons img {
+        width: 40px !important;
+        margin-bottom: 20px;
+    }
+    .content-area {
+        bottom: 44px !important;
+    }
+    .infoButton {
+        width: 32px !important;
+        height: 32px !important;
+    }
+    .arabic-lang .sidetext, .arabic-lang .detail-header {
+        font-weight: bold !important;
+        font-size: 45px !important;
+        line-height: 55px !important;
+        letter-spacing: 3px;
+    }
+    .archivediv{
+        margin: 0px 0 !important;
+    }
+    .dateTime{
+        font-size: 9pt !important;
+    }
+    .arch3 {
+        font-size: 13px !important;
+    }
+    a.col-md-6.projects h3 {
+        font-size: 13px !important;
+        width: 125px;
+        margin: 0px auto;
+    }
+    h3.reeltext {
+        font-size: 13px !important;
+    }
+    h3.head {
+        font-size: 16px !important;
+    }
+    a.active, .non-active, .hub-heading {
+        font-size: 16px !important;
+    }
+    a.active, .non-active:hover {
+        font-weight: 700 !important;
+        text-decoration: underline !important;
+    }
+    a.close-btn {
+        margin: 0px 10px;
+        font-size: 17px !important;
+    }
+    .about-detail, .contact-info, .location-detail, .messagebox, button.sendbtn, .service-detail, .monkey-detail, .monkey-work, .hub-part, .hub-detail {
+        font-size: 13px !important;
+    }
+    .location-info, .location-header {
+        font-size: 14px !important;
+    }
+    .map-image {
+        width: 80% !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+    a.div20.projects h3 {
+        font-size: 13px !important;
+    }
+    .detail-section {
+        height: 100% !important;
+    }
+    .dateTime[_ngcontent-rhg-c0] {
+        font-size: 9pt;
+    }
+    .img-fluid {
+        max-height: 70px !important;
+        max-width: 35% !important;
+    }
+    .content-area{
+        width:80% !important;
+    }
+    .showreeldiv .img-fluid{/* width: 45%; */max-width: 50% !important;}
+    .contact-info input {
+        padding: 4px !important;
+        width: 48% !important;
+    }
+    .contact-info textarea {
+        width: 53% !important;
+        height: 140px !important;
+    
+    }
+    .sendbtn {
+        margin-right: 336px !important;
+    }
+    }
+    
+    @media only screen and (max-width: 1366px) {
+    
+    }
+    @media only screen and (max-width: 1281px){
+    
+    }
+    
+    @media only screen and (max-width: 1153px) {
+    }
+    
+    @media only screen and (max-width: 981px) {
+        .dateTime {
+        display: none !important;
+    }
+     .footer-right{
+        margin: -27px 30px 20px 0 !important;
+    }
+    .infoButton {
+        margin: -18px 0 !important;
+    }
+    .footer{
+        padding: 22px 0px 2px 6px !important;
+    }
+    .mtop-50 {
+        background: #dbdbda;
+    }
+    }
+    
+    @media only screen and (max-width: 800px) {
+    }
+    
+    @media only screen and (max-width: 800px) {
+    
+    }
+    
+    @media only screen and (max-width: 650px) {
+    
+    }
+    
+    @media only screen and (max-width: 321px) {
+    
+    }
+    
+    @media only screen and (max-width: 425px) {
+        
+          .archivediv{
+            margin-bottom: 106px !important;
+        }
+        .showreeldiv, .archivediv{
+            margin: auto;
+        }
+        .showreeldiv{
+            margin-top: -9px !important;
+        }
+        .projects{
+            padding: 20px 0px 20px 0px;
+        }
+        .sidetext {
+            width: auto;
+            margin-top: 50px;
+            font-size: 18pt !important;
+        }
+      
+        .footerbox {
+            width: auto !important;
+            position: absolute !important;
+            top: 0px;
+        }
+      
+        .sidehash {
+            position: absolute !important;
+            top: 0 !important;
+            font-size: 16pt !important;
+            margin-left: -160px !important;
+        }
+      
+        .showreeldiv {
+            position: absolute !important;
+          left: 0px !important;
+          text-align: left !important;
+          top: -795px !important;
+        }
+        .archivediv{
+            position: absolute !important;
+          left: -15px !important;
+        }
+        .showreeldiv .img-fluid {
+            max-width: 35% !important;
+        }
+         
+        .reeltext {
+          width: auto !important;
+          left: 0px !important;
+          margin-right: 280px !important;
+        }
+        .mtop-50{
+            height: 1140px;
+        }
+        .projects-list {
+            margin-top: 300px;  
+          min-width: 100% !important;
+          max-width: 100% !important;
+        }
+      
+        .projects-list  .projects, .detail-section .projects {
+            width: 50% !important;
+          margin-top: 15px !important;
+        }
+      
+        .projects-list  .projects  .img-fluid {
+            max-width: 160px !important;
+      
+        }
+        .projects{
+          margin-top: 30px;
+        }
+      
+        .footer-right {
+          margin: -27px 20px 20px 40px !important;
+        }
+      
+        .detail-header .col-2 {
+          flex: auto !important;
+          max-width: unset !important;
+        }
+      
+        .archive-list .detail-section {
+          background: #dbdbda !important;
+        }
+      
+        .archive-list .detail-header .col-2, .project-details .detail-header .col-2 {
+          margin-top: -22px !important;
+        }
+      
+        .arabic-lang .sidehash {
+          width: 253px !important;
+        }
+      
+        .arabic-lang .showreeldiv {
+          top: -240px !important;
+        }
+    
+    }
+    
+    @media not all, only screen and (min--moz-device-pixel-ratio: 2), not all, not all, only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    
+    }
+    
+    @media only screen and (max-height: 769px) and (min-width: 1020px) {
+    
+    }
+    
+    @media only screen and (-webkit-min-device-pixel-ratio: 1) {
+    
+    }
+    
+    .projects img{
+        cursor : pointer;
+    }
+    
+    .projects h3 {
+         cursor : pointer;
+    }
+    .menus ul li a {
+        letter-spacing: 1px;
+    }
+    
